@@ -1,0 +1,175 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+* {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: #4abaf9;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a.toggle-nav {
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: none;
+}
+
+nav p.menu-title {
+  display: none;
+}
+
+nav .menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav .menu a {
+  display: block;
+  padding: 0.7rem 1rem;
+  transition: all 0.3s ease;
+}
+
+nav .menu a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+nav .menu a.active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+div.content-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.recent-data {
+  order: 1;
+}
+
+.old-data {
+  order: 2;
+}
+
+.old-text {
+  color: #a1a1a1 !important;
+}
+
+.old-content {
+  background-color: #e9e9e9 !important;
+}
+
+.old-background {
+  background-color: #ccc !important;
+}
+
+.home-match {
+  background-color: #86d761;
+}
+
+.away-match {
+  background-color: #f44336;
+}
+
+div.head {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 0.6rem 1rem;
+  box-sizing: border-box;
+}
+
+div.head h2 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+div.head h2 span {
+  width: 100%;
+  display: block;
+}
+
+div.main-content {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  color: #555;
+  padding: 0.6rem 1rem 1.5rem 0.6rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0px 5px 5px #e1e1dc;
+  margin-bottom: 1rem;
+}
+
+div.main-content h2 {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+div.main-content p {
+  margin: 0;
+}
+
+div.main-content h2.adres-data {
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a.toggle-nav {
+    display: block;
+  }
+
+  nav p.menu-title {
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 50px 0 0;
+    display: block;
+  }
+
+  nav .menu {
+    display: none;
+    flex-flow: column wrap;
+    padding-bottom: 1rem;
+  }
+}
