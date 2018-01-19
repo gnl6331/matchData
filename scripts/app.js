@@ -13,9 +13,12 @@ let weekNow = (new Date()).getWeek();
 // Checking the week number in the console. Must be removed before deployment of the app
 console.log(weekNow);
 
+let menuIsToggled = false;
+
 $(document).on("click", ".toggle-nav", function (event) {
     event.preventDefault();
       $(this).siblings(".menu").slideToggle();
+      menuIsToggled = true;
     }
 );
 
@@ -37,6 +40,10 @@ document.querySelector("#menu-matches").addEventListener("click", function() {
     $("#results-output").html("");
     showMatchData();
     $("#results-output").slideToggle("fast");
+    if (menuIsToggled === true) {
+      menuIsToggled = false;
+      $(".main-navigation").find(".menu").slideToggle();
+    }
   }
 });
 
@@ -48,5 +55,9 @@ document.querySelector("#menu-results").addEventListener("click", function() {
     $("#results-output").html("");
     showMatchResults();
     $("#results-output").slideToggle("fast");
+    if (menuIsToggled === true) {
+      menuIsToggled = false;
+      $(".main-navigation").find(".menu").slideToggle();
+    }
   }
 });
