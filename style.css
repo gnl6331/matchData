@@ -5,6 +5,7 @@ body, html {
   right: 0;
   bottom: 0;
   left: 0;
+  height: 100%;
 }
 
 body {
@@ -202,6 +203,7 @@ div.content-container.match-results-container div.match-data {
   color: #fff;
   border-radius: 10px 0 0 10px;
   box-shadow: 0px 5px 5px #e1e1dc;
+  min-height: 120px;
 }
 
 div.content-container.match-results-container div.match-data p span {
@@ -220,6 +222,10 @@ div.content-container.match-results-container div.match-results {
   font-weight: 600;
   border-radius: 0 10px 10px 0;
   box-shadow: 0px 5px 5px #e1e1dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px;
 }
 
 div.content-container.match-results-container div.match-results p.match-result-club {
