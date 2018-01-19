@@ -9,20 +9,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <nav>
+
+    <nav class="main-navigation">
       <a class="toggle-nav" href="#"><i class="fas fa-bars"></i></a>
       <p class="menu-title">VV Asperen MO13-1</p>
       <div class="menu">
-        <a class="active" href="#">Wedstrijden</a>
-        <a href="#">Uitslagen</a>
-        <a href="#">Doelpunten</a>
+        <a id="menu-matches" class="menu-item active" href="#">Wedstrijden</a>
+        <a id="menu-results" class="menu-item" href="#">Uitslagen</a>
+        <a id="menu-goals" class="menu-item" href="#">Doelpunten</a>
       </div>
     </nav>
     <div id="results-output" class="container">
 
     </div>
     <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/app.js"></script>
+
+    <script src="scripts/base.js"></script>
     <script src="scripts/data_matchInfo.js"></script>
+    <script src="scripts/data_matchResults.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>

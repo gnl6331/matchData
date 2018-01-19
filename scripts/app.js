@@ -17,4 +17,36 @@ $(document).on("click", ".toggle-nav", function (event) {
     event.preventDefault();
       $(this).siblings(".menu").slideToggle();
     }
-  );
+);
+
+//function for the menu
+$(document).on("click", "a.menu-item", function (event) {
+  event.preventDefault();
+  $("a.active").removeClass("active");
+  $(this).addClass("active");
+});
+
+let matchDataLoaded = true;
+let matchResultsLoaded = false;
+
+document.querySelector("#menu-matches").addEventListener("click", function() {
+  if (matchDataLoaded === false) {
+    matchDataLoaded = true;
+    matchResultsLoaded = false;
+    $("#results-output").slideToggle("fast");
+    $("#results-output").html("");
+    showMatchData();
+    $("#results-output").slideToggle("fast");
+  }
+});
+
+document.querySelector("#menu-results").addEventListener("click", function() {
+  if (matchResultsLoaded === false) {
+    matchResultsLoaded = true;
+    matchDataLoaded = false;
+    $("#results-output").slideToggle("fast");
+    $("#results-output").html("");
+    showMatchResults();
+    $("#results-output").slideToggle("fast");
+  }
+});
