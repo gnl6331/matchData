@@ -245,6 +245,50 @@ div.content-container.match-results-container div.match-results p.match-result-c
 }
 /* End of the css for the results page */
 
+/* starting goals results */
+.goal-results-container {
+  width: 100% !important;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px #e1e1dc;
+  padding: 1rem;
+  margin: 0 0 1.2rem 0;
+}
+
+.goal-results-container p.goals-row.first-row {
+  font-size: 1rem;
+}
+
+.goal-results-container p.goals-row {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  color: #555;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.goal-results-container p.goals-row span {
+  text-align: center;
+  display: block;
+  width: calc(100% / 4);
+}
+
+.goals-results-offset {
+  margin-bottom: 0.6rem !important;
+  padding-bottom: 0.6rem;
+  border-bottom: solid #dbdbdb 1px;
+}
+
+.goals-results-offset:last-child {
+  margin-bottom: 0;
+}
+
+
+/* End of goal results */
+
 
 @media only screen and (max-width: 768px) {
 

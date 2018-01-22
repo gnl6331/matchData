@@ -31,11 +31,13 @@ $(document).on("click", "a.menu-item", function (event) {
 
 let matchDataLoaded = true;
 let matchResultsLoaded = false;
+let matchGoalsLoaded = false;
 
 document.querySelector("#menu-matches").addEventListener("click", function() {
   if (matchDataLoaded === false) {
     matchDataLoaded = true;
     matchResultsLoaded = false;
+    matchGoalsLoaded = false;
     $("#results-output").slideToggle("fast");
     $("#results-output").html("");
     showMatchData();
@@ -51,9 +53,26 @@ document.querySelector("#menu-results").addEventListener("click", function() {
   if (matchResultsLoaded === false) {
     matchResultsLoaded = true;
     matchDataLoaded = false;
+    matchGoalsLoaded = false;
     $("#results-output").slideToggle("fast");
     $("#results-output").html("");
     showMatchResults();
+    $("#results-output").slideToggle("fast");
+    if (menuIsToggled === true) {
+      menuIsToggled = false;
+      $(".main-navigation").find(".menu").slideToggle();
+    }
+  }
+});
+
+document.querySelector("#menu-goals").addEventListener("click", function() {
+  if (matchGoalsLoaded === false) {
+    matchResultsLoaded = false;
+    matchDataLoaded = false;
+    matchGoalsLoaded = true;
+    $("#results-output").slideToggle("fast");
+    $("#results-output").html("");
+    showMatchGoals();
     $("#results-output").slideToggle("fast");
     if (menuIsToggled === true) {
       menuIsToggled = false;

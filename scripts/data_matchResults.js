@@ -35,7 +35,6 @@ const showMatchResults = () => {
 
               resultsToHTML += "</div>"; // End of the content container div
 
-
       }; // End of the for loop
 
       writeToDocument("results-output", resultsToHTML);
