@@ -18,3 +18,6 @@ const jsonDataFeedResults = jsonDataFeed + spreadheetSheetIdResults + "/public/v
 console.log(jsonDataFeedGoals);
 console.log(jsonDataFeedMatches);
 console.log(jsonDataFeedResults);
+
+const applicationTeamName = "VV Asperen MO13-1"
+document.querySelector(".menu-title").innerHTML = applicationTeamName;

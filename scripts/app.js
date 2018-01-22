@@ -10,8 +10,6 @@ Date.prototype.getWeek = function () {
 };
 
 let weekNow = (new Date()).getWeek();
-// Checking the week number in the console. Must be removed before deployment of the app
-console.log(weekNow);
 
 let menuIsToggled = false;
 

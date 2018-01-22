@@ -3,6 +3,8 @@ const showMatchResults = () => {
   getJsonData.onreadystatechange = () => {
       if (getJsonData.readyState === 4) {
             let retrievedDataFromSource = JSON.parse(getJsonData.responseText);
+            // Reversing the loop for the actual data first
+            let reversedData = retrievedDataFromSource.feed.entry.reverse();
             let resultsToHTML = "";
 
             for (let i = 0; i < retrievedDataFromSource.feed.entry.length; i++) {

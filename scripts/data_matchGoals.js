@@ -1,3 +1,4 @@
+// Funtion for sorting the array
 function compare(a, b) {
   const scoreA = a.doelpunten;
   const scoreB = b.doelpunten;
