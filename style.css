@@ -254,10 +254,16 @@ div.content-container.match-results-container div.match-results p.match-result-c
 /* End of the css for the results page */
 
 /* starting goals results */
+
+.goal-results-container.home-match {
+  border-radius: 10px 10px 0px 0px !important;
+  margin-bottom: 0;
+}
+
 .goal-results-container {
   width: 100% !important;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   box-shadow: 0px 5px 5px #e1e1dc;
   padding: 1rem;
   margin: 0 0 1.2rem 0;
