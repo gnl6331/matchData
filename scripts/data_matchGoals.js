@@ -34,7 +34,7 @@ let goalsToHTML = "";
 
               }; // End of the for loop
 
-              goalsToHTML += "<div class=\"content-container goal-results-container\">";
+              goalsToHTML += "<div class=\"content-container goal-results-container home-match\">";
               goalsToHTML += "<p class=\"goals-row first-row\">";
               goalsToHTML += "<span>Naam</span><span>Doelpunten</span><span>Assists</span><span>Totaal</span>";
               goalsToHTML += "</p></div>";

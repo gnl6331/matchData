@@ -131,7 +131,7 @@ div.content-container {
 }
 
 .home-match {
-  background-color: #86d761;
+  background-color: #86d761 !important;
 }
 
 .away-match {
@@ -256,7 +256,8 @@ div.content-container.match-results-container div.match-results p.match-result-c
 }
 
 .goal-results-container p.goals-row.first-row {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
 }
 
 .goal-results-container p.goals-row {
