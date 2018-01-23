@@ -301,8 +301,36 @@ div.content-container.match-results-container div.match-results p.match-result-c
   margin-bottom: 0;
 }
 
-
 /* End of goal results */
+
+/* Start of club results */
+div.content-container.club-results-container {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+  box-shadow: 0px 5px 5px #e1e1dc;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-top: solid #86d761 5px;
+}
+
+div.content-container.club-results-container h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+div.content-container.club-results-container p {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+
+div.content-container.club-results-container p strong {
+  font-size: 1rem;
+}
+/* end of club results */
 
 
 @media only screen and (max-width: 768px) {
